@@ -29,7 +29,6 @@
 		D0D5D44A1E07EFB1004889D6 /* ServiceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5D4471E07EFAF004889D6 /* ServiceHolder.swift */; };
 		D0D5D44B1E07EFB1004889D6 /* ServiceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5D4471E07EFAF004889D6 /* ServiceHolder.swift */; };
 		D0D5D44C1E07EFB2004889D6 /* ServiceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5D4471E07EFAF004889D6 /* ServiceHolder.swift */; };
-		D0D5D44E1E07F015004889D6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5D44D1E07F015004889D6 /* UIView+Extensions.swift */; };
 		DD7502881C68FEDE006590AF /* FuntastyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* FuntastyKit.framework */; };
 		DD7502921C690C7A006590AF /* FuntastyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* FuntastyKit.framework */; };
 		E70CC852203DCCD200871ACF /* KeyboardHeightConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70CC851203DCCD200871ACF /* KeyboardHeightConstraint.swift */; };
@@ -81,7 +80,6 @@
 		D0C9B6841E072F2D00EA3376 /* Nibable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Nibable.swift; path = Sources/Protocols/Nibable.swift; sourceTree = "<group>"; };
 		D0D5D4461E07EFAF004889D6 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Sources/Architecture/Coordinator.swift; sourceTree = "<group>"; };
 		D0D5D4471E07EFAF004889D6 /* ServiceHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceHolder.swift; path = Sources/Architecture/ServiceHolder.swift; sourceTree = "<group>"; };
-		D0D5D44D1E07F015004889D6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "Sources/Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
 		DD75027A1C68FCFC006590AF /* FuntastyKit-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FuntastyKit-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD75028D1C690C7A006590AF /* FuntastyKit-tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FuntastyKit-tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70CC851203DCCD200871ACF /* KeyboardHeightConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardHeightConstraint.swift; path = Sources/AutoLayout/KeyboardHeightConstraint.swift; sourceTree = "<group>"; };
@@ -208,7 +206,6 @@
 			children = (
 				D0C9B67F1E072A6200EA3376 /* UIViewController+Deselection.swift */,
 				D0C9B6801E072A6200EA3376 /* UIWindow+RootViewController.swift */,
-				D0D5D44D1E07F015004889D6 /* UIView+Extensions.swift */,
 				B91C3C301E0967D2005336D2 /* UITableView+Extensions.swift */,
 			);
 			name = Extensions;
@@ -615,7 +612,6 @@
 				B91C3C331E09682D005336D2 /* StoryboardType.swift in Sources */,
 				D0C9B6821E072A6200EA3376 /* UIWindow+RootViewController.swift in Sources */,
 				D0C9B6861E072F2D00EA3376 /* Nibable.swift in Sources */,
-				D0D5D44E1E07F015004889D6 /* UIView+Extensions.swift in Sources */,
 				52D6D9981BEFF375002C0205 /* FuntastyKit.swift in Sources */,
 				D09AACC91ED8683200438527 /* Errors.swift in Sources */,
 				B91C3C311E0967D2005336D2 /* UITableView+Extensions.swift in Sources */,
