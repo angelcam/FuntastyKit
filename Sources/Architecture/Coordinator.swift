@@ -30,10 +30,10 @@ public extension Coordinator {
 
 public protocol DefaultCoordinator: Coordinator {
     associatedtype ViewController: UIViewController
-    weak var viewController: ViewController? { get set }
+    var viewController: ViewController? { get set }
 
     var animated: Bool { get }
-    weak var delegate: CoordinatorDelegate? { get }
+    var delegate: CoordinatorDelegate? { get }
 }
 
 public protocol PushCoordinator: DefaultCoordinator {
@@ -44,7 +44,7 @@ public protocol PushCoordinator: DefaultCoordinator {
 public protocol ModalCoordinator: DefaultCoordinator {
     var configuration: ((ViewController) -> Void)? { get }
     var navigationController: UINavigationController { get }
-    weak var destinationNavigationController: UINavigationController? { get }
+    var destinationNavigationController: UINavigationController? { get }
 }
 
 public enum PresentationStyle {
@@ -56,7 +56,7 @@ public protocol PushModalCoordinator: DefaultCoordinator {
     var configuration: ((ViewController) -> Void)? { get }
     var navigationController: UINavigationController? { get }
     var presentationStyle: PresentationStyle { get }
-    weak var destinationNavigationController: UINavigationController? { get }
+    var destinationNavigationController: UINavigationController? { get }
 }
 
 public extension DefaultCoordinator {
