@@ -20,7 +20,7 @@ public extension Keyboardable {
         let center = NotificationCenter.default
 
         let keyboardChangeFrameBlock: (Notification) -> Void = { [weak self] notification in
-            guard let rect = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            guard let rect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
                 return
             }
             self?.keyboardChanges(height: rect.size.height)
@@ -31,8 +31,8 @@ public extension Keyboardable {
         }
 
         keyboardObservers = [
-            center.addObserver(forName: .UIKeyboardWillChangeFrame, object: nil, queue: nil, using: keyboardChangeFrameBlock),
-            center.addObserver(forName: .UIKeyboardWillHide, object: nil, queue: nil, using: keyboardWillHideBlock)
+            center.addObserver(forName: UIResponder.keyboardWillChangeFrameNotification, object: nil, queue: nil, using: keyboardChangeFrameBlock),
+            center.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: nil, using: keyboardWillHideBlock)
         ]
 
     }
